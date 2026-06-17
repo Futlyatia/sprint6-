@@ -59,5 +59,5 @@ func HandlerUpload(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w, "Результат конвертации: %s", result)
+	fmt.Fprintf(w, "Исходный текст: %s\n\nРезультат конвертации: %s", input, result)
 }
